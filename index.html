@@ -15,7 +15,9 @@
                     <input type="text" id="display">
                 </div>
                 <div>
-                    <input class="del" type="button" value="AC" onclick="display.value = ' '">
+                    
+                    <input class="del" type="button" value="AC" onclick="displayMessage()">
+                   
                     <input class="del"type="button" value="DE" onclick="display.value = display.value.slice(0,-1)">
                     <input class="sym" type="button" value="." onclick="display.value =display.value + '.'">
                     <input class="sym" type="button" value="/" onclick="display.value =display.value + '/'">
@@ -48,6 +50,15 @@
         </div>
 
     </div>
+
+    <script>
+        function displayMessage() {
+            display.value = 'CASIO';
+            setTimeout(function() {
+                display.value = '';
+            }, 1000);
+        }
+    </script>
 
 
 </body>
